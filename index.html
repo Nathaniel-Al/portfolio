@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Data Science Portfolio</title>
+  <style>
+    :root { --bg: #ffffff; --fg: #1f2937; --muted: #6b7280; --accent: #2563eb; --card: #f3f4f6; }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #111827; --fg: #e5e7eb; --muted: #9ca3af; --accent: #60a5fa; --card: #1f2937; }
+    }
+    body { margin: 0; font-family: system-ui, sans-serif; background: var(--bg); color: var(--fg); line-height: 1.6; }
+    main { max-width: 760px; margin: 0 auto; padding: 48px 20px; }
+    h1 { margin-bottom: 4px; }
+    .tag { color: var(--muted); margin-top: 0; }
+    a { color: var(--accent); }
+    .card { background: var(--card); border-radius: 10px; padding: 16px 20px; margin: 14px 0; }
+    .card h3 { margin: 0 0 6px; }
+    footer { margin-top: 40px; color: var(--muted); font-size: 0.95rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Hi, I'm a Data Science student</h1>
+    <p class="tag">IIT Madras BS in Data Science and Applications</p>
+
+    <h2>About</h2>
+    <p>I work with data, APIs and automation. This page collects a few of the projects I built while learning Python, data analysis and web tooling.</p>
+
+    <h2>Projects</h2>
+    <div class="card">
+      <h3>Student data API</h3>
+      <p>A FastAPI service that serves CSV data as JSON, with filtering by class through query parameters and CORS enabled.</p>
+    </div>
+    <div class="card">
+      <h3>Sentiment classifier endpoint</h3>
+      <p>A rule-based batch sentiment API that labels sentences as happy, sad or neutral, containerised with Docker.</p>
+    </div>
+    <div class="card">
+      <h3>Latency metrics service</h3>
+      <p>A serverless endpoint that reports average latency, 95th percentile latency, uptime and threshold breaches per region.</p>
+    </div>
+    <div class="card">
+      <h3>Configuration merger</h3>
+      <p>A service that merges layered configuration sources and applies command-line style overrides, with secret masking.</p>
+    </div>
+
+    <h2>Skills</h2>
+    <p>Python, SQL, FastAPI, Docker, Git and GitHub, pandas, shell scripting.</p>
+
+    <footer>
+      <p>Contact: <!--email_off-->25ds3000071@ds.study.iitm.ac.in<!--/email_off--></p>
+    </footer>
+  </main>
+</body>
+</html>
